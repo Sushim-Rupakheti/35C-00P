@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class SwitchCase {
     public static void main(String[] args) {
         // char value = 'a';
@@ -42,28 +43,40 @@ public class SwitchCase {
          * if the value is unmentioned then print invalid week
          * 
          */
-        int weekday = 19;
+        Scanner scan= new Scanner(System.in);
+        System.out.println("enter");
+        String weekday = scan.nextLine();
+        System.out.println("enter");
+        int time=scan.nextInt();
         /* Check the weekday in switch */
         switch (weekday) {
-            case 0:
+            case "0":
                 System.out.println("sunday");
+                switch(time){
+                    case 1:
+                    System.out.println("hi");
+                    break;
+                    case 9:
+                    System.out.println("hello");
+                    break;
+                }
                 break;
-            case 1:
+            case "1":
                 System.out.println("monday");
                 break;
-            case 2:
+            case "2":
                 System.out.println("tuesday");
                 break;
-            case 3:
+            case "3":
                 System.out.println("wednesday");
                 break;
-            case 4:
+            case "4":
                 System.out.println("thursday");
                 break;
-            case 5:
+            case "5":
                 System.out.println("friday");
                 break;
-            case 6:
+            case "6":
                 System.out.println("saturday");
                 break;
             default:
